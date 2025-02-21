@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+body{
+    background-color: #bbdefb;
+}
+.title_container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(121.7deg, rgb(41, 116, 250) 22.9%, rgb(67, 212, 255) 69%);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.fst_img {
+    width: 90PX;
+    height: 90PX;  
+    margin-left: 20px;
+}
+.logo_fst{
+    margin-left: 10px;
+    
+}
+.uni_img{
+    width: 90PX;
+    height: 90PX;
+    margin-right: 20px; 
+}
+.logo_uni{
+    margin-left: 10px;
+}
+.container{
+    background-color: #bbdefb;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 150px;
+}
+.display_container{
+    background-color: #bbdefb;
+    display: flex;
+    justify-content: center;
+
+}
+.top_container{
+    display: flex;
+    justify-content: space-around;
+}
+.nbr_cdt_box{
+    background-color:#1976 ;
+    padding: 10px; 
+    margin-bottom:10px ;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),  /* Ombre principale plus marquée */
+    0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+}
+.ajouter_button{
+    margin-top: 35px;
+    width: 200px;
+    height: 40px;
+    background-color:#1976 ;
+    border-radius: 20px;
+}
+.box{
+    background-color: #f5f5f5;
+    color: #212121;
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),  /* Ombre principale plus marquée */
+                0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+.box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),  /* Ombre principale plus marquée */
+                0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px); /* Légère élévation de la carte */
+}
+.departement{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.grids{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 20px;
+    row-gap: 40px;
+    width: 100%;
+}
+
+
+.grids .contenue:last-child button {
+    width: calc(100% - 60px);  /* Ajuste la largeur du dernier bouton si nécessaire */
+}
+.contenue{
+    text-align: center;
+}
+button{
+    width: 100px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    height: 40px;
+    background: #4faaf5;
+    border-radius: 40px;
+    border-color: rgb(13, 29, 252);
+}
+button:hover{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    height: 40px;
+    background: linear-gradient(121.7deg, rgb(41, 116, 250) 22.9%, rgb(67, 212, 255) 69%);
+    border-radius: 40px;
+    transition: transform 0.3s ease; 
+    transform: translateY(-8px);
+}
+.chart-container {
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+    padding: 10px;  /* Uniformiser l'espacement */
+    box-sizing: border-box; /* Assurer que le padding ne provoque pas de décalage */
+}
+/* Style pour le bloc contenant l'orientation et le nombre de filières */
+.departement {
+    display: flex;
+    align-items: center; /* Centrer le texte et les lignes de séparation verticalement */
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.ligne-separation {
+    flex-grow: 1; /* Permet à la ligne de s'étendre mais avec un contrôle sur sa largeur */
+    border-top: 2px solid #007bff; /* Couleur de la ligne */
+    margin: 0 10px; /* Espacement entre la ligne et le texte */
+}
+
+.departement span {
+    padding: 0 5px; /* Réduire l'espace autour du texte */
+}
+.menue_button{
+    background-color:#bbdefb ;
+    border-color:#bbdefb;
+    width: 100px;
+    border-radius: 0;
+}
+.menue_button:hover{
+    background-color:#bbdefb;
+    border-color:black ;
+    width: 100px;
+}
