@@ -1,0 +1,198 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #bbdefb;
+}
+
+body {
+    background-color: #bbdefb;
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px; /* Ensure the header height is adequate */
+    background: linear-gradient(121.7deg, rgb(41, 116, 250) 22.9%, rgb(67, 212, 255) 69%);
+    position: fixed;
+    z-index: 100; /* Ensure the header stays above other elements */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for clarity */
+}
+
+.fst_img, .uni_img {
+    width: 90px;
+    height: 90px;
+}
+
+.logo_fst {
+    margin-left: 20px;
+}
+
+.logo_uni {
+    margin-right: 20px;
+}
+
+.h1_div {
+    text-align: center;
+    flex: 1;
+}
+
+.h1_style {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.container {
+    margin-top: 0px; /* Ensure the container starts below the header */
+    background-color: #bbdefb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content at the top of the container */
+    height: auto; /* Ensure proper height calculation */
+    width: 100%;
+}
+
+.box {
+    margin-top: 200px;
+    background-color: #ffffff;
+    color: #212121;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),  /* Ombre principale plus marquée */
+                0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+.box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),  /* Ombre principale plus marquée */
+                0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px); /* Légère élévation de la carte */
+}
+.titre {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titre h1 {
+    font-size: 24px;
+    color: #1976d2;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form input[type="file"]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+form select[type="text"],form select[type="text"]
+{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="number"]:focus,
+form input[type="file"]:focus {
+    margin-top: 5px;
+    border-color: #1976d2;
+    outline: none;
+    
+}
+form label{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #005cb2;
+}
+
+button:active {
+    background-color: #004ba0;
+}
+
+form input[type="file"] {
+    padding: 5px;
+}
+
+form input[type="file"]:hover {
+    cursor: pointer;
+}
+.choix_text{
+    font-size: 20px;
+
+}
+.submit{
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background-color: #005cb2;
+}
+
+.submit:active {
+    background-color: #004ba0;
+}
+.envoyer_input{
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
